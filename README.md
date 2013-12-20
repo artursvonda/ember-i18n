@@ -2,7 +2,7 @@
 
 Internationalization for Ember
 
-Base off of https://github.com/jamesarosen/ember-i18n but with modifications.
+Based off of https://github.com/jamesarosen/ember-i18n with modifications.
 
 Differences:
 
