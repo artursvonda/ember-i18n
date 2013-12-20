@@ -2,6 +2,16 @@
 
 Internationalization for Ember
 
+Base off of https://github.com/jamesarosen/ember-i18n but with modifications.
+
+Differences:
+
+* No tags for {{t 'translation'}}
+* Bound values
+  * {{t translation replace="value"}} – replace with literal value
+  * {{t translation replace=value}} – get `replace` value from current context `value` field
+  * {{t translation replaceBinding=value}} – bind replace to value in current context
+
 ### Requirements
 
 Set `Em.I18n.translations` to an object containing your translation
