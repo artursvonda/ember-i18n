@@ -158,7 +158,7 @@
       });
 
       it('interpolates bindings', function() {
-        render('{{t "bars.all" countBinding="view.count"}}', { count: 3 });
+        render('{{t "bars.all" countBinding="count"}}', { context: { count: 3 } });
 
         Ember.run(function() {
           expect(view.$().text()).to.equal('All 3 Bars');
@@ -166,7 +166,7 @@
       });
 
       it('responds to updates on bound properties', function() {
-        render('{{t "bars.all" countBinding="view.count"}}', { count: 3 });
+        render('{{t "bars.all" countBinding="count"}}', { context: { count: 3 } });
 
         Ember.run(function() {
           view.set('count', 4);
@@ -268,13 +268,13 @@
 
     });
 
-    describe('TranslateableAttributes', function() {
+    describe('TranslatableAttributes', function() {
       it('exists', function() {
-        expect(Ember.I18n.TranslateableAttributes).to.not.equal(undefined);
+        expect(Ember.I18n.TranslatableAttributes).to.not.equal(undefined);
       });
 
       it('translates ___Translation attributes on the DOM element', function() {
-        Ember.View.reopen(Ember.I18n.TranslateableAttributes);
+        Ember.View.reopen(Ember.I18n.TranslatableAttributes);
         render('{{view titleTranslation="foo.bar"}}');
         expect(view.$().children().first().attr('title')).to.equal("A Foobar");
       });

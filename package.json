@@ -9,9 +9,12 @@
     "i18n"
   ],
   "author": "James A. Rosen <james.a.rosen@gmail.com>",
+  "contributors": [
+    "Arturs vonda <arturs@artursvonda.lv>"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jamesarosen/ember-i18n.git"
+    "url": "git://github.com/artursvonda/ember-i18n.git"
   },
   "main": "lib/i18n.js",
   "scripts": {
