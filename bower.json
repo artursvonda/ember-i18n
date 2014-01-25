@@ -1,11 +1,11 @@
 {
   "name": "ember-i18n",
-  "version": "2.0.0pre",
+  "version": "2.0.0",
   "description": "Internationalization for Ember",
   "main": [ "lib/i18n.js" ],
   "dependencies": {
     "cldr": "~1.0",
-    "jquery": "~1",
+    "jquery": "*",
     "handlebars": "~1.0",
     "ember": "~1.0"
   },
