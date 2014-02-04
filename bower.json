@@ -4,10 +4,10 @@
   "description": "Internationalization for Ember",
   "main": [ "lib/i18n.js" ],
   "dependencies": {
-    "cldr": "1.*",
+    "cldr": "~1",
     "jquery": "*",
-    "handlebars": "1.*",
-    "ember": "1.*"
+    "handlebars": "~1",
+    "ember": "~1"
   },
   "scripts": {
     "test": "rake"
